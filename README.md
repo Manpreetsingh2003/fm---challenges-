@@ -14,37 +14,26 @@ There's a lot of scope for customizing the generated ticket and putting your own
 ![Screenshot 2025-03-07 165018](https://github.com/user-attachments/assets/87cd0ca0-e3f1-4a78-a632-0a1663252386)
 ![Screenshot 2025-03-07 165033](https://github.com/user-attachments/assets/b3dba471-d400-4c70-be0f-00c85a8a6293)
 
- Step-by-Step Functionality
-1️⃣ User Opens the Form
-The form has a dark-themed design with an intuitive layout.
-Users see input fields for Full Name, Email Address, and GitHub Username.
-There is also a drag-and-drop file upload box for the profile picture.
+Challenges Faced & Solutions 🚀
+1️⃣ File Upload Issues
+Ensuring only JPG/PNG files, max 500KB.
+Solution: Validate file type & size, show preview.
 
-2️⃣ Uploading an Avatar
-Users can click the file upload box or drag and drop an image.
-The JavaScript change event detects when a file is selected.
-The file name appears inside the upload box after selection.
-🔹 Validations Applied:
-✔ Only JPG and PNG files are allowed.
-✔ File size must be less than 500KB.
+2️⃣ Form Validation
+Users might leave fields empty or enter invalid emails.
+Solution: Use JavaScript & RegEx to check inputs.
 
-3️⃣ Entering User Details
-Users enter their full name, email, and GitHub username.
-The form validates the inputs:
-Name cannot be empty.
-Email must be in a valid format (example@email.com).
-GitHub Username should start with @ (optional challenge).
+3️⃣ Responsive Design
+Form might not look good on mobile screens.
+Solution: Use CSS Media Queries for better layout.
 
-4️⃣ Submitting the Form
-When the "Generate My Ticket" button is clicked, JavaScript prevents form submission and checks for errors.
-If all fields are correct, an alert message appears saying:
-✅ "Your ticket has been generated!"
+4️⃣ User Experience (UX)
+Basic alerts don’t look good; no success confirmation.
+Solution: Add inline error messages & animations.
 
-5️⃣ Possible Enhancements (Challenges!)
-✔ Show a preview of the uploaded image.
-✔ Display a confirmation page after submission.
-✔ Generate a downloadable conference ticket with user details.
-✔ Fetch and display GitHub user details
+5️⃣ GitHub Username Validation
+No way to check if GitHub username exists.
+Solution: Use GitHub API to fetch user details dynamically.
 
 
 
